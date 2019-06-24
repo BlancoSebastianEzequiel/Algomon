@@ -43,9 +43,9 @@ public class EscenaBatalla implements Escena<EscenaBatalla> {
     private EscenaDeObjetos escenaDeObjetos;
 
     public EscenaBatalla(Entrenador entrenador1, Entrenador entrenador2) {
-        // Musica.parar();
-        //new Musica("107-battle-vs-wild-pokemon-.mp3");
-        // Musica.play();
+        Musica.parar();
+        new Musica("files/107-battle-vs-wild-pokemon-.wav");
+        Musica.play();
         this.entrenador1 = entrenador1;
         this.entrenador2 = entrenador2;
     }

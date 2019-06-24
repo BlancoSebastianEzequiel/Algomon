@@ -1,7 +1,5 @@
 package algomon.aplicacion;
 
-import java.net.URL;
-
 import algomon.eventos.BotonInstrucionesEventHandler;
 import algomon.eventos.BotonJugarEventHandler;
 import algomon.eventos.BotonSalirEventHandler;
@@ -34,11 +32,8 @@ public class Algomon extends Application {
         Scene escenaInicial = new Scene(layout);
         stage.setScene(escenaInicial);
 
-        // ClassLoader classLoader = getClass().getClassLoader();
-        // URL resource = classLoader.getResource("files/opening.mp3");
-        // System.out.println("URL: "+ resource);
-        // new Musica(resource.toString());
-        // Musica.play();
+        new Musica("files/opening.wav");
+        Musica.play();
 
         Imagen imagenDeFondo = new Imagen("file:files/inicio.jpg", 800, 600, false, true);
         layout.setBackground(imagenDeFondo.getAsBackgroundImage());

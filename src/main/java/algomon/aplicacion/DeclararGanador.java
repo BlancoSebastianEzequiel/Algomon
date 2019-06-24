@@ -22,9 +22,9 @@ public class DeclararGanador {
         Scene escenaInstruciones = new Scene(layout);
         stage.setScene(escenaInstruciones);
 
-        // Musica.parar();
-        // new Musica("files/108-victory-vs-wild-pokemon-.mp3");
-        // Musica.play();
+        Musica.parar();
+        new Musica("files/108-victory-vs-wild-pokemon-.wav");
+        Musica.play();
 
         Imagen imagenDeFondo = new Imagen("file:files/finCombate.jpg", 800, 600, false, true);
         layout.setBackground(imagenDeFondo.getAsBackgroundImage());

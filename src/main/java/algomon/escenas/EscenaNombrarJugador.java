@@ -11,7 +11,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import algomon.aplicacion.Escenario;
-// import javafx.scene.effect.Glow;
 import algomon.aplicacion.Imagen;
 import algomon.barraMenu.BarraDeMenu;
 import algomon.entrenador.Entrenador;
