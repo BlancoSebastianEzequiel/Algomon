@@ -18,12 +18,10 @@ public class BotonJugarEventHandler implements EventHandler<ActionEvent> {
     public void handle(ActionEvent event) {
         EscenaElegirJugadoresYAlgomones unaEscenaElegirJugadoresYAlgomones = new EscenaElegirJugadoresYAlgomones();
         unaEscenaElegirJugadoresYAlgomones.inicializarEscena();
-
         Entrenador primerEntrenador = unaEscenaElegirJugadoresYAlgomones.getPrimerEntrenador();
         Entrenador segundoEntrenador = unaEscenaElegirJugadoresYAlgomones.getSegundoEntrenador();
         PasajeALasPeleas pasajeALasPeleas = new PasajeALasPeleas(primerEntrenador, segundoEntrenador);
         unaEscenaElegirJugadoresYAlgomones.setEscenaSiguiente(pasajeALasPeleas);
-
         unaEscenaElegirJugadoresYAlgomones.disparar();
     }
 }
