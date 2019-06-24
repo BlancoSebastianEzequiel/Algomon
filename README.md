@@ -1,8 +1,5 @@
 # Algomon
 Trabajo Practico de la materia Algoritmos y programacion III, 2° C 2016, FIUBA
-
-Este proyecto es un simple ejemplo que muestra un proyecto base en Java para la material Algo3.
-
 ## Build
 Para compilar el juego se bede ejecutar: ```./gradlew build```
 ## Levantar juego
