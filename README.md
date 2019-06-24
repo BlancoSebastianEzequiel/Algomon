@@ -1,15 +1,12 @@
-# algomon
+# Algomon
 Trabajo Practico de la materia Algoritmos y programacion III, 2° C 2016, FIUBA
-
-Ejemplo
 
 Este proyecto es un simple ejemplo que muestra un proyecto base en Java para la material Algo3.
 
-## Definición de pruebas
-### Nombrar correctamente los archivos de pruebas
-
-Al momento de definir un nuevo archivo que contendrá pruebas, ya sean unitarias o 
-de integración, el patrón del nuevo archivo **deberá** ser `<nombre>Test.java`.
-Además de ubicarse en `<directorio del proyecto>/test/`.   
-A modo de ejemplo: `<mi proyecto>/test/<paquete>/MiNuevoArchivoTest.java`.
-
+## Build
+Para compilar el juego se bede ejecutar: ```./gradlew build```
+## Levantar juego
+Para ejecutar el juego se debe ejecutar: ```./gradlew run```
+## Test
+Para correr las pruebas se debe ejecutar: ```./gradlew test```  
+Luego para ver el resultado se debe ver el siguiente archivo: ```build/reports/tests/test/index.html```
