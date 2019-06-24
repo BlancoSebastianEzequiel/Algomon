@@ -71,10 +71,7 @@ public class EscenaNombrarJugador implements Escena<EscenaNombrarJugador> {
     }
 
     private Imagen inicializarImagen() {
-        Imagen imagen = new Imagen("file: files/logo.png", 1280, 720, false, true);
-        // imagen.setEffect(new Glow(1.7f));
-        // imagen.setScaleX(0.4);
-        return imagen;
+        return new Imagen("file:files/logo.png", 1280, 720, false, true);
     }
 
     private Text inicializarPrimerTextoIntroduccion() {
