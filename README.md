@@ -1,7 +1,7 @@
 # Algomon
 Trabajo Practico de la materia Algoritmos y programacion III, 2° C 2016, FIUBA
 ## Docs
-Ver [Informe](docs/report)
+Ver [Informe](docs/report.pdf)
 ## Build
 Para compilar el juego se bede ejecutar: ```./gradlew build```
 ## Levantar juego
