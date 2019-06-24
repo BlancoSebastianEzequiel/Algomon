@@ -1,0 +1,20 @@
+Las excepciones que contempla el modelo son las siguientes:
+\begin{itemize}
+  \item \underline{\textbf{NoPuedeRealizarElAtaqueException:}} Esta excepción se lanza cuando un Pokémon
+  intenta efectuar un ataque que ya consumió por completo. La excepción es atrapada por el método atacar
+  del mismo Pokémon y, de esta manera, conseguimos que un ataque no se puede usar más veces de las
+  contempladas por la consigna.
+  \item \underline{\textbf{PokemonSeDebilitoException:}} Esta excepción es lanzada cuando, producto de un
+  ataque, un Pokémon se queda sin puntos de vida. La excepción es lanzada y asciende hasta llegar al
+  entrenador que dio la orden de ataque que resultó en el debilitamiento de dicho Pokémon. El
+  entrenador atrapa la excepción y se suma un punto a sun puntaje (pues derrotó a uno de los Pokémon
+  del enemigo). Esta excepción se lanza en otros ámbitos también como, por ejemplo, cuando un entrenador
+  intenta cambiar a su Pokémon actual por otro de su equipo que ya no tiene puntos de vida. En este caso
+  la misma interfaz se encarga de atrapar la excepción y realizar las acciones que correspondan.
+  \item \underline{\textbf{EquipoCompletoException:}} Esta excepción se lanza cuando un entrenador
+  intenta agregar a su equipo de tres Pokémon un cuarto. Esta excepción es atrapada luego por la interfaz
+  que se encarga de realizar las acciones que correspondan.
+  \item \underline{\textbf{GanadorException:}} Cuando un entrenador se anota un tercer punto a su
+  puntaje, significa que derrotó a los tres Pokémon del enemigo. Entonces lanza esta excepción que
+  luego la interfaz captura declarando ganador al entrenador que lanzó esta excepción.
+\end{itemize}

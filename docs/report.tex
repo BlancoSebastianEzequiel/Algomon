@@ -1,0 +1,34 @@
+\input{report/packages.tex}
+\input{report/settings.tex}
+
+\begin{document}		
+	\input{report/caratula.tex}
+	\pagenumbering{arabic}
+	\newpage
+
+	% ÍNDICE
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+
+	\graphicspath{{../docs/report/pics/}}
+
+	\section{Supuestos}
+		\input{report/supuestos.tex}
+
+	\newpage
+	\section{Modelo del dominio}
+		\input{report/modelo_del_dominio.tex}
+
+	\newpage
+	\section{Diagramas de clase}
+		\input{report/diagramas_de_clase.tex}
+
+	\newpage
+	\section{Detalles de implementacion}
+		\input{report/detalles_de_implementacion.tex}
+
+	\newpage
+	\section{Escepciones}
+		\input{report/excepciones.tex}
+\end{document}

@@ -1,0 +1,29 @@
+\subsection{Entidades del modelo}
+  \begin{itemize}
+    \item \underline{\textbf{Pokemon:}} modela a un Pokémon genérico capaz de atacar y recibir ataques.
+    \item \underline{\textbf{Subtipos de Pokemon:}} son clases que heredan de Pokémon y modelan a los
+    distintos tipos que plantea la consigna: Fuego,Agua,Hierba y Normal. Cada subtipo tiene redefinidos
+    los métodos recibirAtaque correspondientes para lograr representar la ventaja de tipos
+    \item \underline{\textbf{Pokemones concretos:}} representan a los Pokémon que el usuario final de la
+    aplicación podrá utilizer para pelear
+    \item \underline{\textbf{Ataque:}} modelan las técnicas de combate de los Pokémon. Se ejecutan con el
+    método correspondiente y le mandan un mensaje al objetivo para que decremente sus puntos de vida según
+    corresponda.
+    \item \underline{\textbf{Subtipos de ataque:}} modelan los distintos tipos de ataques que contempla la
+    consigna: Fuego,Agua,Hierba y Normal.
+    \item \underline{\textbf{Ataques concretos:}} modelan los ataques que el usaurio final podrá ordenar
+    realizar a los Pokémon.
+    \item \underline{\textbf{Entrenador:}} modela al jugador que participa de la batalla. Tiene un conjunto
+    de Pokémon y de elementos a su disposición. Posee además los métodos para hacer uso de dichos elementos,
+    darle órdenes de ataque a sus Pokémon o hacer cambios dentro del equipo.
+    \item \underline{\textbf{Elemento:}} esta clase modela a los elementos que un entrenador puede usar
+    durante la batalla. Tienen diversos efectos como recuperar puntos de vida o curar al Pokémon de
+    estados adversos.
+    \item \underline{\textbf{Modo:}} esta clase modela el estado en que se encuentra un Pokémon. Heredan
+    de esta clase, entre otras, las clases ModoDañoPermanente y ModoInhabilitadoPor1Turno, las cuales se
+    encargan de modelar estados adversos. En el caso de ModoDañoPermanente , por ejemplo, el comportamiento
+    del Pokémon es modificado de manera que, en cada turno, pierde una cantidad de puntos de vida equivalente
+    al 10 \% de sus puntos de vida originales.
+    \item \underline{\textbf{Juego:}} esta clase es la encargada de interactuar con la interfaz gráfica
+    recibiendo las órdenes que ésta le pase y ejecutándolas en el modelo.
+  \end{itemize}

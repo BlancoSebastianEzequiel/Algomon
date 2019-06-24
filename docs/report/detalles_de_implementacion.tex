@@ -1,0 +1,30 @@
+Implementamos los métodos de un Pokémon genérico aplicando el patrón double dispatch.
+Todas las instancias de la clase Pokémon tienen métodos para recibir ataques de diversos tipos pero,
+dependiendo de la subclase a la que pertenezca cada instancia, el efecto de los ataques que se
+reciban varía. \\
+
+A su vez, todos los Pokémon pueden lanzar ataques (recibiendo previamente uan instancia del ataque
+en cuestión y un objetivo como parámetro). Dependiendo del subtipo de la clase \code{Ataque} al que pertenezca la
+instancia recibida, ejecutar el método atacar resultará en enviarle un mensaje distinto al enemigo.
+Atacar con \code{Brasas}, por ejemplo, resultará en enviarle el mensaje \code{recibirAtaqueDeFuego()} al enemigo.
+Por ejemplo, Squirtle y Charmander tienen el método \code{recibirAtaqueDeHierba()} al igual que todo Pokémon. \\
+Pero \code{Squirtle} pertenece además al subtipo \code{WaterTypePokemon}, por lo que \code{recibirAtaqueDeHierba()}
+le debitará a sus puntos de vida el doble de la potencia del ataque recibido. Por otra parte \code{Charmander}
+pertenece al subtipo \code{FireTypePokemon}, lo que significa que tiene el método \code{recibirAtaqueDeHierba()}
+implementado de manera diferente. En cuestión, lo tiene implementado para debitar de sus puntos de
+vida solamente la mitad de la potencia del ataque recibido. De esta manera, siguiendo este patrón
+podemos modelar el sistema de ventaja de tipos entre Pokémon. \\
+
+Los Pokémon también pueden sufrir estados adversos que modifiquen su comportamiento durante la batalla.
+Para eso tienen un atributo accionador que lleva dentro una instancia de Modo. De esta manera, algunos
+de los ataques que reciban pueden cambiar el Modo que llevan por Inhabilitado o quemado por ejemplo.
+
+Estos Pokémon serán comandados luego por un entrenador que llevará tres instancias dentro de su
+aributo equipoPokémon. \\
+
+Por encima de los entrenadores está la clase juego, que lleva como atributo dos instancias de entrenador,
+es decir, a los dos jugadores. \\
+
+El juego recibirá las órdenes del jugador a través de la interfaz gráfica y le ordenará al entrenador
+del turno actual ejecutar dicha acción. Entre una acción y la otra el juego irá cambiando los turnos
+para que cada jugador pueda jugar.
