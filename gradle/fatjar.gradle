@@ -1,0 +1,11 @@
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'TP Algoritmos y programacion III',
+                'Implementation-Version': version,
+                'Main-Class': 'Algomon.aplicacion.Algomon'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
